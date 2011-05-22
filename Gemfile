@@ -7,6 +7,8 @@ gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 
 gem 'spork', '~> 0.9.0.rc'
 
+gem 'gravatar_image_tag', '0.1.0'
+
 group :development do
   gem 'rspec-rails', '2.5.0'
   gem 'annotate-models'
