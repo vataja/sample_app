@@ -29,6 +29,15 @@ Spork.prefork do
     # examples within a transaction, comment the following line or assign false
     # instead of true.
     config.use_transactional_fixtures = true
+
+    #tämmönen vielä löytyy railstutorialista:
+    #ActiveSupport::Dependencies.clear
+
+    def test_sign_in(user)
+      #controller.current_user = user
+      #päivitystä ylläolevaan; fiksumpi tapa (ja ks HMM in sessions_helper.rb):
+      controller.sign_in(user)
+    end
   end
 end
 
